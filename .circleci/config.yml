@@ -656,16 +656,6 @@ jobs:
           sample_name: amazon-cognito-identity-js-cookie-storage
           spec: amazon-cognito-identity-js-cookie-storage
           browser: << parameters.browser >>
-  integ_node_amazon_cognito_identity_js_cookie_storage:
-    executor: js-test-executor
-    <<: *test_env_vars
-    working_directory: ~/amplify-js-samples-staging/samples/node/auth/amazon-cognito-identity-js-cookie-storage
-    steps:
-      - prepare_test_env
-      - integ_test_node_js:
-          test_name: 'amazon-cognito-identity-js-cookie-storage'
-          category: auth
-          sample_name: amazon-cognito-identity-js-cookie-storage
   integ_react_amazon_cognito_identity_js:
     parameters:
       browser:
@@ -689,7 +679,7 @@ jobs:
     steps:
       - prepare_test_env
       - integ_test_node_js:
-          test_name: 'amazon-cognito-identity-js'
+          test_name: 'amazon-cognito-identity-js-cookie-storage'
           category: auth
           sample_name: amazon-cognito-identity-js
   integ_rn_ios_storage:
