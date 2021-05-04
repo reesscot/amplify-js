@@ -944,7 +944,7 @@ workflows:
       #       - build
       #     filters:
       #       <<: *releasable_branches
-      - integ_react_amazon_cognito_identity_js-cookie-storage:
+      - integ_react_amazon_cognito_identity_js_cookie_storage:
           requires:
             - integ_setup
             - build
@@ -953,7 +953,7 @@ workflows:
           matrix:
             parameters:
               <<: *test_browsers
-      - integ_node_amazon_cognito_identity_js-cookie-storage:
+      - integ_node_amazon_cognito_identity_js_cookie_storage:
           requires:
             - integ_setup
             - build
