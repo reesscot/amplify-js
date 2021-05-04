@@ -1009,8 +1009,9 @@ workflows:
             - integ_react_interactions
             - integ_angular_interactions
             - integ_vue_interactions
-            - integ_react_amazon_cognito_identity_js-cookie-storage
-            - integ_node_amazon_cognito_identity_js-cookie-storage
+            - integ_react_amazon_cognito_identity_js_cookie_storage
+            - integ_react_amazon_cognito_identity
+            - integ_node_amazon_cognito_identity
             - integ_react_auth
             - integ_angular_auth
             - integ_vue_auth
